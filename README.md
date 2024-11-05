@@ -1,2 +1,6 @@
 # project6
-repositorio para el proyecto 6 tripleten
+
+La liga de mi página web es el siguiente:
+
+https://project6-1zi4.onrender.com
+
