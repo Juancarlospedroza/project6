@@ -19,12 +19,12 @@ if hist_button: # al hacer clic en el botón
 
 correlacion1 = st.checkbox('Correlación entre precio y odómetro')
 if correlacion1:
-    st.write("Entre mayor sea el odómetro el precio tiende a bajar")
+    st.header("Entre mayor sea el odómetro el precio tiende a bajar")
     fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
     st.plotly_chart(fig, use_container_width=True)
 
 correlacion2 = st.checkbox('Correlación entre precio y año del modelo')
 if correlacion2:
-    st.write("Entre más nuevo sea el vehículo el precio tiende a subir")
+    st.header("Entre más nuevo sea el vehículo el precio tiende a subir")
     fig = px.scatter(car_data, x="model_year", y="price") # crear un gráfico de dispersión
     st.plotly_chart(fig, use_container_width=True)
